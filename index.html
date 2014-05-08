@@ -7,28 +7,32 @@
 	<style type="text/css" media="all">
 body { background: #fff; }
 
-#centered-logo { position: relative; width: 497px; height: 929px; margin: 0 auto; }
-#centered-logo > * { position: absolute; display: block; }
-#centered-logo > #iphone { position: static; width: 497px; height: 928px; }
+#centered-phone { position: relative; width: 497px; height: 929px; margin: 0 auto; }
+#centered-phone > * { position: absolute; display: block; }
+#centered-phone > #iphone { position: static; width: 497px; height: 928px; }
 
-#centered-logo #screen-region { top: 150px; left: 54px; width: 390px; height: 585px; }
-#centered-logo #screen-region > #tagline { position: absolute; bottom: 64px; left: auto; right: auto; width: 385px; }
-#centered-logo #screen-region > #social-band { position: absolute; bottom: 24px; left: auto; right: auto; width: 385px; }
+#centered-phone #screen-region { top: 150px; left: 54px; width: 390px; height: 585px; }
+#centered-phone #screen-region > #logo { position: absolute; top: 60px; left: 0; right: 0; }
+#centered-phone #screen-region > #logo > img { display: block; margin: 0 auto; }
+#centered-phone #screen-region > #tagline { position: absolute; top: 420px; left: 32px; right: 32px; }
+#centered-phone #screen-region > #centered-social { position: absolute; bottom: 8px; left: 4px; right: 4px; }
 
 #tagline {
-	color: #fff;
-	font-size: 14px; font-family: 'Audiowide', 'Arial Black', 'Gadget', sans-serif;
-	text-shadow: 0px 2px 1px rgba(219, 126, 77, 0.75);
+	color: #00c3f4;
+	font-size: 18px; font-family: 'Audiowide', 'Arial Black', 'Gadget', sans-serif;
+	text-shadow: 0px 1px 2px rgb(0, 0, 0), 0px 3px 0px rgba(127, 127, 127, 0.5), 0px 5px 0px rgba(127, 0, 0, 0.5), 0px 7px 0px rgba(127, 127, 127, 0.25);
 	text-align: center;
 }
 
 .vhorizon { position: absolute; left: 50%; width: 0; }
 .vhorizon > .centerer { position: absolute; width: 200px; }
 
-#social { text-align: center; margin-top: 32px; margin-bottom: 16px; }
+#centered-social { text-align: center; }
+body > #centered-social { margin-top: 32px; margin-bottom: 16px; }
+#screen-region > #centered-social { margin: 0; }
 #social-band { display: inline-block; }
 #social-band > * { display: inline; margin: 2px; }
-#social-band img { width: 57px; height: 57px; }
+#social-band img { width: 38px; height: 38px; }
 #social-band .hidden { display: none !important; }
 	</style>
 	<meta name="twitter:card" content="summary">
@@ -51,28 +55,25 @@ _gaq.push(['_trackPageview']);
 <body>
 
 
-<div id="centered-logo">
+<div id="centered-phone">
 	<div id="screen-region">
-		<div id="tagline">Awesome video games for cool kids since 198T.</div>
-		<!--div id="social-band"></div-->
+		<div id="logo"><img src="imagery/versus-kids-logo.white-border.358x332.png"></div>
+		<div id="tagline">Awesome <nobr>video games</nobr> for <nobr>cool kids</nobr> <nobr>since 198T.</nobr></div>
+		<div id="centered-social">
+			<div id="social-band">
+				<a href="https://twitter.com/vskids" rel="me"><img src="imagery/social/twitter.png"></a>
+				<a href="https://www.facebook.com/versuskids" rel="me"><img src="imagery/social/facebook.png"></a>
+				<a href="https://plus.google.com/+VersuskidsIndie" rel="me"><img src="imagery/social/google-plus.png"></a>
+				<a href="http://instagram.com/vskids" rel="me"><img src="imagery/social/instagram.png"></a>
+				<a href="http://vskids.tumblr.com/" rel="me"><img src="imagery/social/tumblr.png"></a>
+				<a href="http://www.pinterest.com/vskids/" rel="me"><img src="imagery/social/pinterest.png"></a>
+				<a class="hidden" href="https://github.com/vskids" rel="me"><img src="imagery/social/github.png"></a>
+				<a href="http://www.twitch.tv/vskids" rel="me"><img src="imagery/social/twitch.png"></a>
+				<a href="http://www.youtube.com/user/vskidsindie" rel="me"><img src="imagery/social/youtube.png"></a>
+			</div>
+		</div>
 	</div>
-	<img id="iphone" src="imagery/versus-kids-painted-iphone4s.2014-03-03.497x929.jpeg">
-</div>
-
-
-
-<div id="social">
-	<div id="social-band">
-		<a href="https://twitter.com/vskids" rel="me"><img src="imagery/social/twitter.png"></a>
-		<a href="https://www.facebook.com/versuskids" rel="me"><img src="imagery/social/facebook.png"></a>
-		<a href="https://plus.google.com/+VersuskidsIndie" rel="me"><img src="imagery/social/google-plus.png"></a>
-		<a href="http://instagram.com/vskids" rel="me"><img src="imagery/social/instagram.png"></a>
-		<a href="http://vskids.tumblr.com/" rel="me"><img src="imagery/social/tumblr.png"></a>
-		<a href="http://www.pinterest.com/vskids/" rel="me"><img src="imagery/social/pinterest.png"></a>
-		<a class="hidden" href="https://github.com/vskids" rel="me"><img src="imagery/social/github.png"></a>
-		<a href="http://www.twitch.tv/vskids" rel="me"><img src="imagery/social/twitch.png"></a>
-		<a href="http://www.youtube.com/user/vskidsindie" rel="me"><img src="imagery/social/youtube.png"></a>
-	</div>
+	<img id="iphone" src="imagery/versus-kids-painted-iphone4s.2014-03-03.blank-screen.497x929.jpeg">
 </div>
 
 
